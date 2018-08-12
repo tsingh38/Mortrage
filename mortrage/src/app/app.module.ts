@@ -3,9 +3,16 @@ import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { UserComponent } from './user/user.component';
+import { AdduserComponent } from './adduser/adduser.component';
+import { ProcessuserComponent } from './processuser/processuser.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UserComponent,
+    AdduserComponent,
+    ProcessuserComponent
   ],
   imports: [
     BrowserModule,FormsModule
@@ -13,4 +20,5 @@ import { AppComponent } from './app.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+ }

@@ -1,0 +1,7 @@
+<button type="button" class="btn btn-primary" [disabled]="username=== '' || email ===''" (click)="doshowUsers()">ShowUsers</button>
+<button type="button" class="btn btn-primary" [disabled]="username=== '' || email ===''" (click)="showUsers==!ShowUsers">Clear</button>  
+<div *ngIf="showUsers">
+    <div class="alert alert-info" role="alert"  *ngFor="let user of users">
+        <strong>{{user.username}} </strong> with <strong> {{user.email}} </strong> has been processed.
+    </div>
+</div>

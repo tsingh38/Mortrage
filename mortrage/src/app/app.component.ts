@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'mortrage';
+   usersDef:Array<{username:string,email:string}>;
+
+
+
+addedUser( listOfUsers: Array<{username:string,email:string}>){
+  this.usersDef=[];
+  this.usersDef=listOfUsers;
+  
+}
+
 }
